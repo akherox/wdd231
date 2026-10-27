@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bryan Alex Bravo Medina | WDD 231 Home</title>
+  <meta name="description"
+    content="Course home page for WDD 231 Web Frontend Development by Bryan Alex Bravo Medina, with certificate course progress.">
+  <meta name="author" content="Bryan Alex Bravo Medina">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Site logo" width="24" height="24">
+    <span>Bryan Alex Bravo Medina</span>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+      aria-controls="nav-bar"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation" aria-label="Main">
+    <ul>
+      <li class="current"><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="final/index.html">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>I am Bryan Alex Bravo Medina, a BYU-Pathway student learning web and computer programming. I am building my
+        skills in HTML, CSS, and JavaScript, one course at a time.</p>
+      <p>My goal is to create fast, accessible websites that are easy to use on any device.</p>
+    </section>
+
+    <section class="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Tools I Use</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git and GitHub</li>
+        <li>Visual Studio Code</li>
+      </ul>
+    </section>
+
+    <section class="certificate" aria-labelledby="cert-title">
+      <h2 id="cert-title">Certificate: Web and Computer Programming</h2>
+      <div class="filters" role="group" aria-label="Filter courses">
+        <button type="button" data-filter="all" aria-pressed="true">All Courses</button>
+        <button type="button" data-filter="WDD" aria-pressed="false">WDD Courses</button>
+        <button type="button" data-filter="CSE" aria-pressed="false">CSE Courses</button>
+      </div>
+      <p id="credits" aria-live="polite"></p>
+      <div id="course-list" class="course-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/akherox" target="_blank" rel="noopener"><img src="images/github.svg"
+          alt="GitHub profile" width="32" height="32"></a>
+      <a href="https://www.linkedin.com/in/alex-bravo-008-mk" target="_blank" rel="noopener"><img
+          src="images/linkedin.svg" alt="LinkedIn profile" width="32" height="32"></a>
+      <a href="https://teams.microsoft.com/" target="_blank" rel="noopener"><img src="images/teams.svg"
+          alt="Microsoft Teams" width="32" height="32"></a>
+    </div>
+    <p id="copyright"></p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>

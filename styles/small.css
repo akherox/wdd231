@@ -1,0 +1,209 @@
+:root {
+  --text: #222;
+  --bg: #fff;
+  --line: #bbb;
+  --accent: #1f5f3a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: 24px 1fr 44px;
+  align-items: center;
+  column-gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: #fff;
+  font-weight: 700;
+}
+
+.hamburger {
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+/* Navigation */
+.navigation {
+  display: none;
+  background: #333;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background: #555;
+}
+
+.navigation .current a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #1f5f3a;
+  outline-offset: 2px;
+}
+
+header a:focus-visible,
+nav a:focus-visible,
+footer a:focus-visible,
+.hamburger:focus-visible {
+  outline-color: #fff;
+}
+
+/* Main */
+main {
+  padding: 0 1rem 1.5rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.skills ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+/* Course filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filters button {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #222;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #eee;
+}
+
+.filters button[aria-pressed="true"] {
+  background: #222;
+  color: #fff;
+}
+
+#credits {
+  font-weight: 700;
+}
+
+.course-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.course-card {
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.75rem;
+}
+
+.course-card.completed {
+  background: #e6efe8;
+  border-left: 5px solid var(--accent);
+}
+
+.course-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.course-card p {
+  margin: 0.15rem 0 0;
+}
+
+.course-card .tech {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.course-card .status {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Footer */
+footer {
+  background: #eee;
+  border-top: 1px solid var(--line);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social a {
+  display: block;
+}

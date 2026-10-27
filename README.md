@@ -7,14 +7,14 @@ This repository provides the starter files and structure for **WDD 231 (Web Fron
 
 ## Purpose
 
-Use this template as the foundation for course projects and practice work. It is meant to give students a consistent starting point for building dynamic websites with HTML, CSS, and JavaScript, with a focus on accessibility, performance, and basic API use.
+Use this template as the foundation for course projects and practice work, focused on dynamic websites with HTML, CSS, and JavaScript, accessibility, performance, and basic API use.
 
 ## Includes
 
 - Starter HTML files
-- CSS files
-- JavaScript files
-- Basic folders for assets and project organization
+- CSS files (`styles/`)
+- JavaScript files (`scripts/`)
+- Images (`images/`)
 
 ## Notes
 
