@@ -1,3 +1,3 @@
 document.querySelector('#copyright').textContent =
-  `\u00A9 ${new Date().getFullYear()} Bryan Alex Bravo Medina | Brazil`;
+  `\u00A9 ${new Date().getFullYear()} Bryan Bravo | Brazil, SP`;
 document.querySelector('#lastModified').textContent = document.lastModified;

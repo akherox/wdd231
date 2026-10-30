@@ -87,14 +87,13 @@ function displayCourses(items) {
     items.forEach(course => {
         const card = document.createElement('div');
         card.className = course.completed ? 'course-card completed' : 'course-card';
-        card.innerHTML = `<h3>${course.subject} ${course.number}</h3>
-      <p>${course.title}</p>
-      <p class="tech">${course.technology.join(', ')}</p>
-      ${course.completed ? '<p class="status">\u2713 Completed</p>' : ''}`;
+        card.innerHTML = course.completed
+            ? `${course.subject} ${course.number} \u2713<span class="visually-hidden"> (completed)</span>`
+            : `${course.subject} ${course.number}`;
         list.appendChild(card);
     });
     const total = items.reduce((sum, course) => sum + course.credits, 0);
-    creditsOut.textContent = `Total credits shown: ${total}`;
+    creditsOut.textContent = `The total credits for course listed above is ${total}`;
 }
 
 buttons.forEach(button => {
