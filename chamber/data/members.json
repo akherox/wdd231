@@ -1,0 +1,9 @@
+[
+  {"name":"Padaria Pão Dourado","tagline":"Pães artesanais todos os dias","address":"Rua Augusta, 1200, São Paulo, SP","phone":"(11) 5550-1001","website":"https://paodourado.example.com","image":"pao-dourado.svg","membership":3,"email":"contato@paodourado.example.com"},
+  {"name":"Tech Paulista","tagline":"Soluções em TI para pequenas empresas","address":"Av. Paulista, 900, São Paulo, SP","phone":"(11) 5550-1002","website":"https://techpaulista.example.com","image":"tech-paulista.svg","membership":3,"email":"ola@techpaulista.example.com"},
+  {"name":"Livraria Páginas","tagline":"Livros novos e usados","address":"Rua da Consolação, 450, São Paulo, SP","phone":"(11) 5550-1003","website":"https://paginas.example.com","image":"paginas.svg","membership":2,"email":"livros@paginas.example.com"},
+  {"name":"Café Mooca","tagline":"Café especial da roça à xícara","address":"Rua da Mooca, 321, São Paulo, SP","phone":"(11) 5550-1004","website":"https://cafemooca.example.com","image":"cafe-mooca.svg","membership":2,"email":"oi@cafemooca.example.com"},
+  {"name":"Contabilidade Alfa","tagline":"Seu negócio em dia","address":"Rua XV de Novembro, 88, São Paulo, SP","phone":"(11) 5550-1005","website":"https://alfa.example.com","image":"alfa.svg","membership":1,"email":"atendimento@alfa.example.com"},
+  {"name":"Oficina Rápida","tagline":"Manutenção de carros e motos","address":"Av. do Estado, 2500, São Paulo, SP","phone":"(11) 5550-1006","website":"https://oficinarapida.example.com","image":"oficina-rapida.svg","membership":1,"email":"servico@oficinarapida.example.com"},
+  {"name":"Studio Verde","tagline":"Paisagismo e plantas","address":"Rua Oscar Freire, 700, São Paulo, SP","phone":"(11) 5550-1007","website":"https://studioverde.example.com","image":"studio-verde.svg","membership":2,"email":"plantas@studioverde.example.com"}
+]

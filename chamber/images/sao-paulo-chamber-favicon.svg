@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     fill="none"
+     role="img"
+     aria-label="São Paulo Chamber of Commerce logo">
+  <g stroke="#0b4f6c" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Bold, simplified cables for small-size legibility -->
+    <path d="M27 17 8 46 M29 19 17 46 M37 17 56 46 M35 19 47 46"
+          stroke-width="4"/>
+    <!-- Compact X-shaped tower -->
+    <path d="M24 6 C27 19 35 24 32 34 C30 41 25 49 23 55
+             M40 6 C37 19 29 24 32 34 C34 41 39 49 41 55"
+          stroke-width="7"/>
+    <!-- Heavy deck -->
+    <path d="M5 48 H59 M5 57 H59" stroke-width="5"/>
+  </g>
+</svg>

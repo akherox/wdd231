@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Directory | São Paulo Chamber of Commerce</title>
+  <meta name="description" content="Browse the member business directory of the São Paulo Chamber of Commerce.">
+  <meta name="author" content="Bryan Bravo">
+  <meta property="og:title" content="Directory | São Paulo Chamber of Commerce">
+  <meta property="og:description" content="Browse the member business directory of the São Paulo Chamber of Commerce.">
+  <meta property="og:image" content="https://akherox.github.io/wdd231/chamber/images/open_graph_logo.jpg">
+  <meta property="og:url" content="https://akherox.github.io/wdd231/chamber/directory.html">
+  <link rel="icon" href="images/sao-paulo-chamber-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/sao-paulo-chamber-favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/sao-paulo-chamber-logo.svg" alt="" width="40" height="40">
+    <span class="site-name">São Paulo Chamber of Commerce</span>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+      aria-controls="nav-bar"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="current"><a href="directory.html" aria-current="page">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Directory</h1>
+
+    <div class="view-toggle" role="group" aria-label="Choose view">
+      <button id="grid" type="button" aria-pressed="true">Grid</button>
+      <button id="list" type="button" aria-pressed="false">List</button>
+    </div>
+
+    <section id="members" class="grid" aria-live="polite" aria-label="Member businesses"></section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p><strong>São Paulo Chamber of Commerce</strong></p>
+      <p>Av. Paulista, 1000<br>São Paulo, SP, Brazil<br>info@spchamber.example.com<br>(11) 5550-2300</p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/" aria-label="Facebook"><img src="images/facebook.svg" alt="" width="36" height="36"></a>
+      <a href="https://x.com/" aria-label="X"><img src="images/x.svg" alt="" width="36" height="36"></a>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="" width="36" height="36"></a>
+    </div>
+    <div class="credits">
+      <p>WDD 231 Class Project</p>
+      <p>Bryan Bravo</p>
+      <p id="copyright"></p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
