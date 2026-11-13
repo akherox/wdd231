@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | São Paulo Chamber of Commerce</title>
+  <meta name="description"
+    content="Welcome to the São Paulo Chamber of Commerce. See local events, today's weather and featured member businesses.">
+  <meta name="author" content="Bryan Bravo">
+  <meta property="og:title" content="Home | São Paulo Chamber of Commerce">
+  <meta property="og:description"
+    content="Welcome to the São Paulo Chamber of Commerce. See local events, today's weather and featured member businesses.">
+  <meta property="og:image" content="https://akherox.github.io/wdd231/chamber/images/open_graph_logo.jpg">
+  <meta property="og:url" content="https://akherox.github.io/wdd231/chamber/index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/sao-paulo-chamber-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/sao-paulo-chamber-favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/sao-paulo-chamber-logo.svg" alt="São Paulo Chamber of Commerce logo" width="40" height="40">
+    <span class="site-name">São Paulo Chamber of Commerce</span>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+      aria-controls="nav-bar"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation" aria-label="Main">
+    <ul>
+      <li class="current"><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main class="home">
+    <h1 class="visually-hidden">São Paulo Chamber of Commerce</h1>
+
+    <div class="hero">
+      <img src="images/hero.webp" alt="Cable-stayed bridge over the Pinheiros River in São Paulo" width="1200"
+        height="800" fetchpriority="high">
+      <a class="cta" href="join.html">Join the Chamber</a>
+    </div>
+
+    <section class="panel events" aria-labelledby="events-title">
+      <h2 id="events-title">Upcoming Events</h2>
+      <ul>
+        <li><strong>Nov 20:</strong> Business Networking Breakfast</li>
+        <li><strong>Dec 04:</strong> Small Business Marketing Workshop</li>
+        <li><strong>Dec 12:</strong> Holiday Shop Local Fair</li>
+      </ul>
+    </section>
+
+    <section class="panel weather" aria-labelledby="weather-title">
+      <h2 id="weather-title">Weather in São Paulo</h2>
+      <div class="panel-body">
+        <div class="current">
+          <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""
+            width="64" height="64" hidden>
+          <div>
+            <p id="current-temp">Loading...</p>
+            <p id="current-desc"></p>
+          </div>
+        </div>
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast"></ul>
+      </div>
+    </section>
+
+    <section class="spotlights" aria-labelledby="spotlight-title">
+      <h2 id="spotlight-title">Member Spotlights</h2>
+      <div id="spotlight-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p><strong>São Paulo Chamber of Commerce</strong></p>
+      <p>Av. Paulista, 1000<br>São Paulo, SP, Brazil<br>info@spchamber.example.com<br>(11) 5550-2300</p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" width="36" height="36"></a>
+      <a href="https://x.com/"><img src="images/x-twitter.svg" alt="X (Twitter)" width="36" height="36"></a>
+      <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn" width="36" height="36"></a>
+    </div>
+    <div class="credits">
+      <p>WDD 231 Class Project</p>
+      <p>Bryan Bravo</p>
+      <p id="copyright"></p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

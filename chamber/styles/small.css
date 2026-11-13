@@ -110,7 +110,8 @@ h1 { margin: 0.75rem 0; }
   color: #fff;
 }
 
-.card-header h2 { margin: 0; font-size: 1.2rem; }
+.card-header h2,
+.card-header h3 { margin: 0; font-size: 1.2rem; }
 .card-header p { margin: 0; font-size: 0.9rem; }
 
 .card-body {
@@ -134,3 +135,70 @@ footer p { margin: 0.25rem 0; }
 .social img { filter: brightness(0) invert(1); }
 footer a { color: #fff; }
 footer a:focus-visible { outline-color: #fff; }
+
+/* Home page */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.home { display: grid; gap: 1rem; padding-top: 1rem; }
+
+.hero { position: relative; }
+
+.hero img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cta {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  padding: 0.85rem 1.75rem;
+  background: var(--dark);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  white-space: nowrap;
+}
+
+.cta:hover { background: #226b8c; }
+.cta:focus-visible { outline-color: #fff; }
+
+.panel { background: var(--panel); border-radius: 6px; overflow: hidden; }
+
+.panel h2,
+.spotlights h2 {
+  margin: 0;
+  padding: 0.5rem;
+  background: var(--dark);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.panel ul { margin: 0; padding: 0.75rem 1rem 0.75rem 2rem; }
+.panel li { margin-bottom: 0.25rem; }
+.panel-body { padding: 0.75rem 1rem; }
+.panel-body p { margin: 0; }
+.panel-body h3 { margin: 0.75rem 0 0; font-size: 1rem; }
+.panel-body ul { padding: 0.25rem 0 0 1.25rem; }
+#current-temp { font-size: 2rem; font-weight: 700; }
+#current-desc { text-transform: capitalize; }
+
+#spotlight-list { display: grid; gap: 1rem; padding-top: 1rem; }
+.current { display: flex; align-items: center; gap: 1rem; }
+#weather-icon { background: #3f93b8; border-radius: 50%; flex-shrink: 0; }
+#weather-icon[hidden] { display: none; }

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <rect width="1200" height="500" fill="#0b4f6c"/>
+  <rect y="300" width="1200" height="200" fill="#083d54"/>
+  <g fill="#226b8c">
+    <rect x="40" y="260" width="70" height="240"/>
+    <rect x="130" y="200" width="90" height="300"/>
+    <rect x="240" y="280" width="60" height="220"/>
+    <rect x="330" y="170" width="100" height="330"/>
+    <rect x="450" y="240" width="80" height="260"/>
+    <rect x="800" y="220" width="90" height="280"/>
+    <rect x="910" y="150" width="110" height="350"/>
+    <rect x="1040" y="260" width="80" height="240"/>
+  </g>
+  <g fill="#083d54">
+    <rect x="60" y="300" width="30" height="200"/>
+    <rect x="150" y="260" width="50" height="240"/>
+    <rect x="350" y="230" width="60" height="270"/>
+    <rect x="930" y="210" width="70" height="290"/>
+  </g>
+  <g stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M530 430 H790" stroke-width="8"/>
+    <path d="M630 130 C640 200 660 215 660 250 C660 300 640 380 630 430 M690 130 C680 200 660 215 660 250 C660 300 680 380 690 430" stroke-width="12"/>
+    <path d="M642 160 L545 430 M648 190 L580 430 M654 220 L615 430 M678 160 L775 430 M672 190 L740 430 M666 220 L705 430" stroke-width="4"/>
+  </g>
+</svg>

@@ -21,3 +21,19 @@
   .social a, .social img { width: 36px; height: 36px; }
   .credits { text-align: left; justify-self: end; }
 }
+
+@media (min-width: 48rem) {
+  .home {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .hero,
+  .spotlights { grid-column: 1 / -1; }
+
+  #spotlight-list { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 48rem) {
+  .hero img { aspect-ratio: 12 / 5; object-position: 50% 10%; }
+}
