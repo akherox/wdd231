@@ -18,10 +18,13 @@ function showCurrent(data) {
   currentTemp.textContent = `${Math.round(data.main.temp)}°C`;
   currentDesc.textContent = data.weather[0].description;
 
-  const icon = document.querySelector('#weather-icon');
+  const icon = document.createElement('img');
+  icon.id = 'weather-icon';
   icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   icon.alt = data.weather[0].description;
-  icon.hidden = false;
+  icon.width = 64;
+  icon.height = 64;
+  document.querySelector('#current-weather').prepend(icon);
 }
 
 function showForecast(data) {

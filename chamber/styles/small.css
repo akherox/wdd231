@@ -170,7 +170,7 @@ footer a:focus-visible { outline-color: #fff; }
   text-decoration: none;
   border-radius: 6px;
   font-size: 1.1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 8px #00000059;
   white-space: nowrap;
 }
 
@@ -201,4 +201,3 @@ footer a:focus-visible { outline-color: #fff; }
 #spotlight-list { display: grid; gap: 1rem; padding-top: 1rem; }
 .current { display: flex; align-items: center; gap: 1rem; }
 #weather-icon { background: #3f93b8; border-radius: 50%; flex-shrink: 0; }
-#weather-icon[hidden] { display: none; }
