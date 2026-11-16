@@ -176,6 +176,11 @@ section h2 {
 }
 
 .course-card {
+  width: 100%;
+  min-height: 44px;
+  font: inherit;
+  color: var(--text);
+  cursor: pointer;
   padding: 0.25rem 0.5rem;
   text-align: center;
   background: #c4c4c4;
@@ -186,6 +191,53 @@ section h2 {
   background: #bfdcc6;
   border-color: var(--accent);
   font-weight: 700;
+}
+
+/* Course details modal */
+dialog {
+  width: 90%;
+  max-width: 600px;
+  padding: 1rem;
+  background: #fff;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 3rem #777;
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 50%);
+}
+
+dialog h2 {
+  margin: 0 3rem 0.25rem 0;
+}
+
+dialog h3 {
+  margin: 0 0 0.75rem;
+}
+
+dialog button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  min-width: 44px;
+  min-height: 44px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  dialog[open] {
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 #credits {

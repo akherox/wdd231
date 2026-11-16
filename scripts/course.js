@@ -81,15 +81,44 @@ const courses = [
 const list = document.querySelector('#course-list');
 const creditsOut = document.querySelector('#credits');
 const buttons = document.querySelectorAll('.filters button');
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button type="button" id="closeModal" aria-label="Close">\u274c</button>
+        <h2 id="course-title">${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    courseDetails.querySelector('#closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+// Close the modal when the user clicks outside of it (on the backdrop)
+courseDetails.addEventListener('click', (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
 
 function displayCourses(items) {
     list.innerHTML = '';
     items.forEach(course => {
-        const card = document.createElement('div');
+        const card = document.createElement('button');
+        card.type = 'button';
         card.className = course.completed ? 'course-card completed' : 'course-card';
         card.innerHTML = course.completed
             ? `${course.subject} ${course.number} \u2713<span class="visually-hidden"> (completed)</span>`
             : `${course.subject} ${course.number}`;
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
         list.appendChild(card);
     });
     const total = items.reduce((sum, course) => sum + course.credits, 0);
