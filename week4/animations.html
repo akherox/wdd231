@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Animations and Transitions | WDD 231</title>
+  <meta name="description" content="Practice page with a CSS loading animation and a hover transition.">
+  <meta name="author" content="Bryan Bravo">
+  <link rel="stylesheet" href="styles/animations.css">
+</head>
+
+<body>
+  <main>
+    <h1>CSS Animations and Transitions</h1>
+
+    <section class="demo" aria-labelledby="animation-title">
+      <h2 id="animation-title">1. Animation (loading)</h2>
+      <p>This loader uses <code>@keyframes</code>, the <code>animation</code> shorthand, and <code>transform</code>.</p>
+      <div class="loader" role="img" aria-label="Loading animation"></div>
+    </section>
+
+    <section class="demo" aria-labelledby="transition-title">
+      <h2 id="transition-title">2. Transition (hover)</h2>
+      <p>Hover over the circle, or focus it with the keyboard, to start the transition. It runs once and does not loop.
+      </p>
+      <div class="loader-t" tabindex="0" role="img" aria-label="Hover transition example"></div>
+    </section>
+  </main>
+</body>
+
+</html>

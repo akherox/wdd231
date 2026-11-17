@@ -1,0 +1,101 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  margin: 0;
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.demo {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+/* 1. Animation: keyframes + shorthand */
+.loader {
+  position: relative;
+  margin: 2rem;
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-color: #999 transparent #999 transparent;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+.loader::after {
+  content: "\2699\FE0F";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+
+/* 2. Transition: runs once on hover or keyboard focus */
+.loader-t {
+  position: relative;
+  margin: 2rem;
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-color: #999 transparent #999 transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+  transition: transform 1.5s linear;
+}
+
+.loader-t::after {
+  content: "\2699\FE0F";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 1.5s ease-in-out;
+}
+
+.loader-t:hover,
+.loader-t:focus-visible {
+  transform: rotate(360deg);
+}
+
+.loader-t:hover::after,
+.loader-t:focus-visible::after {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Respect users who ask for less motion */
+@media (prefers-reduced-motion: reduce) {
+  .loader,
+  .loader::after {
+    animation: none;
+  }
+
+  .loader-t,
+  .loader-t::after {
+    transition: none;
+  }
+}
