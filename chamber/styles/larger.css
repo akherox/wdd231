@@ -37,3 +37,7 @@
 @media (min-width: 48rem) {
   .hero img { aspect-ratio: 12 / 5; object-position: 50% 10%; }
 }
+
+@media (min-width: 48rem) {
+  .join-layout { grid-template-columns: 3fr 2fr; align-items: start; }
+}
