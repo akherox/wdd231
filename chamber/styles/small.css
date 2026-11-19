@@ -28,12 +28,6 @@ body {
   flex-direction: column;
 }
 
-/* Main grows so the footer stays at the bottom on short pages */
-main {
-  flex: 1;
-  width: 100%;
-}
-
 header {
   display: grid;
   grid-template-columns: 40px 1fr 44px;
@@ -110,7 +104,10 @@ button:focus-visible {
   outline-offset: -3px;
 }
 
+/* flex: 1 makes main grow, so the footer stays at the bottom on short pages */
 main {
+  flex: 1;
+  width: 100%;
   padding: 0 1rem 1rem;
 }
 
