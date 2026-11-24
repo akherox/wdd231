@@ -1,0 +1,149 @@
+:root {
+  --dark: #0b4f6c;
+  --text: #1b2a33;
+  --panel: #eef2f4;
+  --accent: #b7410e;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--panel);
+}
+
+header,
+footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p,
+footer p {
+  margin: 0.25rem 0 0;
+}
+
+h1,
+h2,
+.font-heading {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--dark);
+  margin-top: 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid var(--accent);
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  background: var(--white);
+  border: 1px solid var(--dark);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+code {
+  background: var(--panel);
+  padding: 0.1rem 0.3rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  color: var(--dark);
+  padding-bottom: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid var(--dark);
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.swatch {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--text);
+  vertical-align: middle;
+}
+
+.swatch-dark {
+  background: var(--dark);
+}
+
+.swatch-text {
+  background: var(--text);
+}
+
+.swatch-panel {
+  background: var(--panel);
+}
+
+.swatch-accent {
+  background: var(--accent);
+}
+
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--dark);
+  background: var(--white);
+}
+
+figcaption {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+@media (min-width: 48rem) {
+  #wireframe {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+
+  #wireframe h2,
+  #wireframe>p {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+  }
+}
