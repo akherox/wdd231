@@ -104,7 +104,6 @@ button:focus-visible {
   outline-offset: -3px;
 }
 
-/* flex: 1 makes main grow, so the footer stays at the bottom on short pages */
 main {
   flex: 1;
   width: 100%;
@@ -179,7 +178,6 @@ h1 {
   overflow-wrap: anywhere;
 }
 
-/* List view: one column, no images */
 #members.list {
   gap: 0;
 }
@@ -227,7 +225,6 @@ footer a:focus-visible {
   outline-color: #fff;
 }
 
-/* Home page */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -279,14 +276,17 @@ footer a:focus-visible {
   outline-color: #fff;
 }
 
-.panel {
+.panel,
+.place,
+.visit-message {
   background: var(--panel);
   border-radius: 6px;
   overflow: hidden;
 }
 
 .panel h2,
-.spotlights h2 {
+.spotlights h2,
+.place h2 {
   margin: 0;
   padding: 0.5rem;
   background: var(--dark);
@@ -386,7 +386,8 @@ footer a:focus-visible {
   font-weight: 400;
 }
 
-.join input[type="submit"] {
+.join input[type="submit"],
+.place button {
   min-height: 48px;
   border: 0;
   border-radius: 6px;
@@ -397,7 +398,8 @@ footer a:focus-visible {
   cursor: pointer;
 }
 
-.join input[type="submit"]:hover {
+.join input[type="submit"]:hover,
+.place button:hover {
   background: #226b8c;
 }
 
@@ -491,7 +493,7 @@ dialog {
 }
 
 dialog::backdrop {
-  background: rgb(0 0 0 / 50%);
+  background: #00000080;
 }
 
 dialog h2 {
@@ -502,6 +504,10 @@ dialog .close-modal {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
+}
+
+dialog .close-modal,
+.visit-message button {
   min-width: 44px;
   min-height: 44px;
   background: #fff;
