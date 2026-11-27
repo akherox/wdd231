@@ -1,0 +1,127 @@
+.visit-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--panel);
+  border-radius: 6px;
+}
+
+.visit-message[hidden] {
+  display: none;
+}
+
+.visit-message p {
+  margin: 0;
+}
+
+.visit-message button {
+  min-width: 44px;
+  min-height: 44px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.places {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "p1" "p2" "p3" "p4" "p5" "p6" "p7" "p8";
+}
+
+.place {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+  padding: 0 0 1rem;
+  background: var(--panel);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.place h2 {
+  margin: 0;
+  padding: 0.5rem;
+  background: var(--dark);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.place figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.place img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.place address {
+  padding: 0 1rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.place p {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.place button {
+  justify-self: start;
+  margin: 0 1rem;
+  min-height: 44px;
+  padding: 0.5rem 1.25rem;
+  background: var(--dark);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.place button:hover {
+  background: #226b8c;
+}
+
+@media (min-width: 641px) {
+  .places {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "p1 p1"
+      "p2 p3"
+      "p4 p4"
+      "p5 p6"
+      "p7 p7"
+      "p8 p8";
+  }
+
+  .place img {
+    transition: transform 0.3s, filter 0.3s;
+  }
+
+  .place:hover img {
+    transform: scale(1.08);
+    filter: saturate(1.4) brightness(1.05);
+  }
+}
+
+@media (min-width: 1025px) {
+  .places {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "p1 p1 p2 p3"
+      "p1 p1 p4 p5"
+      "p6 p7 p7 p8";
+  }
+}
